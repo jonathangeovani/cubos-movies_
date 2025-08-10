@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import "./style.scss";
 
 interface Props {
@@ -7,11 +8,12 @@ interface Props {
   placeholder?: string;
   img?: string;
   imgAlt?: string;
+  style?: CSSProperties;
 }
 
-const Input = ({ id, name, type, placeholder, img, imgAlt }: Props) => {
+const Input = ({ id, name, type, placeholder, img, imgAlt, style }: Props) => {
   return (
-    <div className="input-box">
+    <div className="input-box" style={style}>
       <input
         type={type ? type : "text"}
         name={name}
