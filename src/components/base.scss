@@ -1,0 +1,49 @@
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  color: var(--clr-primary-text);
+  
+  &:hover {
+    background-color: var(--clr-primary-hover);
+    
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: var(--clr-primary-active);
+  }
+
+  svg, img {
+    width: 24px;
+  }
+}
+
+.soft-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-soft);
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  color: var(--clr-primary-text);
+  
+  &:hover {
+    background-color: var(--clr-soft-hover);
+    
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: var(--clr-soft-active);
+  }
+
+  svg, img {
+    width: 24px;
+  }
+}
