@@ -5,4 +5,8 @@
   align-items: stretch;
   justify-content: center;
   gap: 10px;
+
+  @media screen and (max-width: 700px) {
+    padding: 16px;
+  }
 }
