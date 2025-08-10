@@ -1,0 +1,37 @@
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  min-width: 44px;
+  min-height: 44px;
+  background-color: var(--clr-soft);
+  backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  color: var(--clr-soft-text);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  
+  &:hover {
+    background-color: var(--clr-soft-hover);
+    
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: var(--clr-soft-active);
+  }
+
+  &:disabled {
+    background-color: var(--clr-soft-disabled);
+    color: var(--clr-soft-disabled-text);
+  }
+
+  svg, img {
+    width: 24px;
+  }
+}
