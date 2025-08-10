@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <div className="content-wrapper">
         <h1>
-          <img src={logoUrl} alt="Cubos" width={160} />
+          <img src={logoUrl} alt="Cubos" width={160} /> Movies
         </h1>
         <button className="soft-button">
           <img src={sunUrl} alt="Dark/Light mode" />
