@@ -29,6 +29,7 @@
   &:disabled {
     background-color: var(--clr-soft-disabled);
     color: var(--clr-soft-disabled-text);
+    cursor: default;
   }
 
   svg, img {
