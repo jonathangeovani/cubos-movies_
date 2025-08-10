@@ -1,0 +1,39 @@
+@use './styles/colors' as *;
+
+:root {
+    font-family: Montserrat, Roboto, Inter sans-serif;
+
+    --background-primary: var(--mauve-12);
+
+    .dark {
+        --background-primary: var(--mauve-1);
+        --background-blur: var(--mauve-3-a2);
+
+        --text-primary: var(--mauve-12);
+        --text-secondary: var(--mauve-11);
+        --title-primary: var(--mauve-11b);
+        --title-secondary: var(--mauve-12b);
+
+        --search-background: var(--mauve-2);
+        --search-border: var(--mauve-7);
+
+        --input-placeholder: var(--mauve-9);
+        --input-background: var(--mauve-2);
+        --input-border: var(--mauve-6);
+        --input-focused-border: var(--purple-9);
+        
+        --clr-primary: var(--purple-9);
+        --clr-primary-hover: var(--purple-10);
+        --clr-primary-active: var(--purple-8);
+        --clr-primary-disabled: var(--mauve-9);
+        --clr-primary-text: var(--white);
+        --clr-primary-disabled-text: var(--mauve-a10);
+        
+        --clr-soft-text: var(--purple-a12);
+        --clr-soft-disabled-text: var(--mauve-a9);
+        --clr-soft: var(--purple-a2);
+        --clr-soft-hover: var(--purple-a3);
+        --clr-soft-active: var(--purple-a1);
+        --clr-soft-disabled: var(--mauve-a3);
+    }
+}
