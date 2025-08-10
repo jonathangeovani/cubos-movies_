@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import SearchBarContainer from "../components/SearchBarContainer";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+const Index = () => {
   return (
     <>
       <SearchBarContainer />
     </>
   );
-}
+};
+
+export const Route = createFileRoute("/")({
+  component: Index,
+});
