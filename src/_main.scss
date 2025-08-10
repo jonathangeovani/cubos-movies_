@@ -29,6 +29,8 @@
         --input-background: var(--mauve-2);
         --input-border: var(--mauve-6);
         --input-focused-border: var(--purple-9);
+
+        --footer-border: var(--mauve-a6);
         
         --clr-primary: var(--purple-9);
         --clr-primary-hover: var(--purple-10);
@@ -48,13 +50,19 @@
             background: url('./assets/background.png') fixed no-repeat, var(--background-primary);
             background-size: 100%, auto;
             background-position: center, top;
+
+            @media screen and (min-width: 1440px) {
+                background-size: cover, auto;
+            }
+
+            @media screen and (max-width: 700px) {
+                background-size: cover, auto;
+            }
         }
     }
 }
 
 body {
-    min-height: 100vh;
-    min-height: 100dvh;
     background-color: var(--background-primary);
 }
 
@@ -62,12 +70,6 @@ main {
     margin: 0 auto;
     max-width: 1366px;
     width: 100%;
-    min-height: calc(100dvh - 93px);
-
-}
-
-@media (min-width: 1440px) {
-    main {
-        background-position: cover, top;
-    }
+    min-height: calc(100vh - 161px);
+    min-height: calc(100dvh - 161px);
 }
