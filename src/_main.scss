@@ -1,5 +1,11 @@
 @use './styles/colors' as *;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-family: Montserrat, Roboto, Inter sans-serif;
 
@@ -36,4 +42,8 @@
         --clr-soft-active: var(--purple-a1);
         --clr-soft-disabled: var(--mauve-a3);
     }
+}
+
+body {
+    background-color: var(--mauve-1);
 }
