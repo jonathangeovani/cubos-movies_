@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -13,7 +14,8 @@
 
     .dark {
         --background-primary: var(--mauve-1);
-        --background-blur: var(--mauve-3-a2);
+        --box-background: var(--mauve-3-a2);
+        --container-background: var(--mauve-a3)
 
         --text-primary: var(--mauve-12);
         --text-secondary: var(--mauve-11);
@@ -41,9 +43,31 @@
         --clr-soft-hover: var(--purple-a3);
         --clr-soft-active: var(--purple-a1);
         --clr-soft-disabled: var(--mauve-a3);
+
+        main {
+            background: url('./assets/background.png') fixed no-repeat, var(--background-primary);
+            background-size: 100%, auto;
+            background-position: center, top;
+        }
     }
 }
 
 body {
-    background-color: var(--mauve-1);
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--background-primary);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1366px;
+    width: 100%;
+    min-height: calc(100dvh - 93px);
+
+}
+
+@media (min-width: 1440px) {
+    main {
+        background-position: cover, top;
+    }
 }
