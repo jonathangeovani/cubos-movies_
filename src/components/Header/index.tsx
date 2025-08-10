@@ -6,12 +6,14 @@ import "./style.scss";
 const Header = () => {
   return (
     <header>
-      <h1>
-        <img src={logoUrl} alt="Cubos" width={160} />
-      </h1>
-      <button className="soft-button">
-        <img src={sunUrl} alt="Dark/Light mode" />
-      </button>
+      <div className="content-wrapper">
+        <h1>
+          <img src={logoUrl} alt="Cubos" width={160} />
+        </h1>
+        <button className="soft-button">
+          <img src={sunUrl} alt="Dark/Light mode" />
+        </button>
+      </div>
     </header>
   );
 };

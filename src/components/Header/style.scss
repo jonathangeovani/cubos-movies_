@@ -1,14 +1,18 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   padding: 22px 16px;
   background-color: var(--background-primary);
   border-bottom: 1px solid var(--mauve-a6);
-
+  
   button {
     width: 64px;
     height: 48px;
+  }
+
+  .content-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1366px;
   }
 }
