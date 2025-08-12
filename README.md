@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# Desafio front-end - Cubos Tecnologia (inacabado)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação em Vue para buscar informações sobre filmes utilizando a API TMDB.
 
-Currently, two official plugins are available:
+## Instalar e Executar a aplicação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para instalar as dependências utilize o comando:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```console
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto foi criado utilizando Vite + React, conforme recomendado pela [documentação oficial](https://vuejs.org). Então, para rodar a aplicação localmente, utilize o comando:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```console
+npm run dev
 ```
+
+## Tecnologias utilizadas
+
+- Typescript: para adicionar tipagem estática e ajudar na detecção de erros no código.
+- Sass: para estilização mais eficiente dos componente.
+- Tanstack Query: para gerenciamento automático de estado e requisições rápidas e eficientes.
+- Axios: para requisições
+
+## Comandos úteis
+
+Com a aplicação rodando, na linha de comando:
+
+- Tecla "o" abre a aplicação no navegador.
+- Tecla "q" encerra a aplicação.
+- Tecla "h" mostra todos os comandos disponíveis.
