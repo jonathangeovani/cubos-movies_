@@ -1,7 +1,7 @@
 .movie-card {
   position: relative;
-  width: 235px;
-  height: 355px;
+  width: 100%;
+  aspect-ratio: 235 / 355;
   padding: 16px;
 
   display: flex;
@@ -48,8 +48,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: -1;
-
   }
 
   &::after {
@@ -59,7 +59,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(transparent, var(--black-a1) 80%)
+    background-image: linear-gradient(to bottom, transparent, var(--black-a1) 80%)
   }
 
   .progress-bar {
@@ -68,5 +68,22 @@
     left: 0;
     right: 0;
     display: none;
+  }
+
+  @media screen and (max-width: 700px) {
+    max-width: calc(50% - 8px);
+
+    .details {
+      h3 {
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .progress-bar {
+      top: calc(0.7 * 61px);
+    }
   }
 }
