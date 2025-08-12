@@ -3,8 +3,12 @@ import SecondaryButton from "../SecondaryButton";
 import SearchUrl from "../../assets/search.svg";
 import filterUrl from "../../assets/filter.svg";
 import "./styles.scss";
+import { debounce } from "../../utils/debounce";
 
 const SearchBarContainer = () => {
+  const onChange = debounce((e) => {
+    console.log(e.target.value);
+  }, 750);
   return (
     <div className="search-bar-container">
       <Input
@@ -13,6 +17,7 @@ const SearchBarContainer = () => {
         placeholder="Pesquise por filmes"
         img={SearchUrl}
         imgAlt="Pesquisar"
+        onChange={onChange}
       />
       <SecondaryButton
         content={filterUrl}

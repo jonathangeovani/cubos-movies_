@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import React, { type CSSProperties } from "react";
 import "./style.scss";
 
 interface Props {
@@ -9,9 +9,19 @@ interface Props {
   img?: string;
   imgAlt?: string;
   style?: CSSProperties;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = ({ id, name, type, placeholder, img, imgAlt, style }: Props) => {
+const Input = ({
+  id,
+  name,
+  type,
+  placeholder,
+  img,
+  imgAlt,
+  style,
+  onChange,
+}: Props) => {
   return (
     <div className="input-box" style={style}>
       <input
@@ -19,6 +29,7 @@ const Input = ({ id, name, type, placeholder, img, imgAlt, style }: Props) => {
         name={name}
         id={id}
         placeholder={placeholder}
+        onChange={onChange}
       />
       {img && <img src={img} alt={imgAlt} />}
     </div>
