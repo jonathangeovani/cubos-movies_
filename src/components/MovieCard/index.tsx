@@ -16,9 +16,9 @@ const MovieCard = ({ title, categories, img, percentage, onClick }: Props) => {
         <h3>{title}</h3>
         <p>{categories.join(", ")}</p>
       </div>
-      <img src={img} alt={title} />
+      <img src={"https://image.tmdb.org/t/p/w500/" + img} alt={title} />
       <div className="progress-bar">
-        <ProgressBar percentage={percentage} />
+        <ProgressBar percentage={Number((percentage * 10).toFixed(0))} />
       </div>
     </div>
   );
